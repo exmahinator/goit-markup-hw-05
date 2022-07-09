@@ -532,6 +532,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    transition-property: background-color, transform;
+    transition-duration: 150ms;
+    transition-timing-function: linear;
 }
 
 .team-social-item:last-child,
@@ -568,6 +572,10 @@
     
     border: 1px solid var(--customers-list, #AFB1B8);
     border-radius: 4px;
+
+    transition-property: border-color, color, transform;
+    transition-duration: 150ms;
+    transition-timing-function: linear;
 }
 
 .regular-customers-item:nth-child(6n) {
@@ -576,6 +584,9 @@
 
 .icon-customers {
     fill: var(--customers-list, #afb1b8);
+    transition-property: fill;
+    transition-duration: 150ms;
+    transition-timing-function: linear;
 }
 
 /* Footer */
@@ -639,6 +650,10 @@
 .footer-social-link {
     background-color: var(--footer-social, #ffffff1a);
     color: var(--footer-text, #ffffff);
+
+    transition-property: background-color, transform;
+    transition-duration: 150ms;
+    transition-timing-function: linear;
 }
 
 .icon-footer {
@@ -700,6 +715,10 @@
     overflow: hidden;
 
     background-color: var(--portfolio-item, #ffffff);
+
+    transition-property: box-shadow, transform;
+    transition-duration: 150ms;
+    transition-timing-function: linear;
 }
 
 .portfolio-item:nth-child(3n) {
@@ -816,6 +835,7 @@
 .team-social-link:hover,
 .team-social-link:focus {
     background-color: var(--accent, #2196F3);
+    transform: scale(1.25);
 }
 
 .team-social-link:hover .icon-team,
@@ -834,11 +854,12 @@
 .regular-customers-link:focus {
     color: var(--accent, #2196F3);
     border-color: var(--accent, #2196F3);
+    transform: scale(1.25);
 }
 
 .regular-customers-link:hover .icon-customers,
 .regular-customers-link:focus .icon-customers {
-    fill: var(--accent, #2196f3);
+    fill: var(--accent, #2196f3);    
 }
 
 /* Between those comments will be "active" state for regular customers links */
@@ -851,6 +872,7 @@
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--accent, #2196F3);
+    transform: scale(1.25);
 }
 /* Between those comments will be "active" state for footer social links */
 /* Between those comments will be "active" state for footer social links */
@@ -876,6 +898,7 @@
 .portfolio-item:hover,
 .portfolio-item:focus {
     box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
+    transform: scale(1.05);
 }
 
 .portfolio-item:hover .portfolio-overlay,
@@ -889,3 +912,32 @@
 /* Put SVG icon with Use
 <svg class="user-nav__icon" width="18px" height="18px"><use href="images/sprite.svg#icon-search"></use></svg>
  */
+
+
+    /* .box {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: tomato;
+
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+        Задаём значения перехода
+        transition-property: background-color, border-radius, transform;
+        transition-duration: 250ms;
+        transition-timing-function: linear;
+        transition-delay: 0;
+        }
+
+    При ховере меняем значения анимируемых свойств
+    .box:hover {
+        transform: scale(0.5);
+    }
+
+    .box:hover {
+        background-color: teal;
+        border-radius: 50%;
+        transform: rotate(180deg);
+        transform: scale(1.5);
+    } */
