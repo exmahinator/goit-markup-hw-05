@@ -253,8 +253,10 @@
     display: flex;
     bottom: 0;
 
-    border-bottom: 5px solid var(--accent, #2196F3);
+    border-bottom: 4px solid var(--accent, #2196F3);
     border-radius: 2px;
+
+    transform: translate(0, 25%);
 }
 
 .nav-link.current-active {
