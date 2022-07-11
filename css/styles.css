@@ -246,7 +246,7 @@
 }
 
 /* "Active" state for page */
-.nav-item .current-active::after {
+.current-active::after {
     content: "";
     width: 100%;
     position: absolute;
