@@ -817,9 +817,6 @@
     margin-right: 30px;
     margin-bottom: 30px;
 
-    /* position: relative; */
-    /* overflow: hidden; */
-
     background-color: var(--portfolio-item, #ffffff);
 
     transition-property: box-shadow, transform;
